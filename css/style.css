@@ -1,0 +1,104 @@
+/* Main container styling */
+.main .block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Header styling */
+h1, h2, h3 {
+    color: #7096d1;
+    font-weight: 700;
+}
+
+/* Game card styling */
+.css-1r6slb0, .css-keje6w {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+}
+
+/* Button styling */
+.stButton > button {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success button styling */
+button[kind="primary"] {
+    background-color: #10B981;
+}
+
+/* Input fields styling */
+.stNumberInput, .stTextInput {
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+/* Balance display styling */
+[data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #1E40AF !important;
+}
+
+/* Game result styling */
+.element-container div[data-testid="stAlert"] {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* Footer styling */
+footer {
+    font-size: 0.8rem;
+    color: #6B7280;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Animated background for win screen */
+@keyframes gradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+
+.win-animation {
+    background: linear-gradient(-45deg, #10B981, #1E40AF, #10B981);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Custom card styling */
+.custom-card {
+    background-color: #7096d1;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .main .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
